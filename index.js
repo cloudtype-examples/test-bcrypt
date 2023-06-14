@@ -23,7 +23,7 @@ const app = express()
   }).use((err, req, res, next) => {
     console.error(err);
     res.status(500);
-    res.render('error');
+    res.send('error');
   });
 
 
